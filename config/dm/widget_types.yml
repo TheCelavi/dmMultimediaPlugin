@@ -1,0 +1,25 @@
+dmWidgetContent:
+
+  EmbeddedVideo:
+    cache:              true
+    public_name:        Embeded Video
+    form_class:         dmEmbeddedVideoForm
+    view_class:         dmEmbeddedVideoView
+    
+  AudioPlayer:
+    cache:              true
+    public_name:        Audio Player
+    form_class:         dmAudioPlayerForm
+    view_class:         dmAudioPlayerView
+    
+  VideoPlayer:
+    cache:              true
+    public_name:        Video Player
+    form_class:         dmVideoPlayerForm
+    view_class:         dmVideoPlayerView
+    
+  FlashPlayer:
+    cache:              true
+    public_name:        Flash Player
+    form_class:         dmFlashPlayerForm
+    view_class:         dmFlashPlayerView

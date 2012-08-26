@@ -1,0 +1,75 @@
+parameters:
+
+  ###########################################
+  # Multimedia helpers default configurations
+  ###########################################
+
+  # Embedded video
+  # NOTE - some sizing information:
+  # 360p = 640x360
+  # 480p = 853x480
+  # 720p = 1280x720
+  embedded_video.class:       dmEmbeddedVideo
+  embedded_video.options:
+    width:                640
+    height:               360
+    allowFullScreen:      true
+    allowScriptAccess:    true
+  
+  
+  # Video player
+  video_player.class:       dmVideoPlayer
+  video_player.options:
+    provider:             static
+    width:                640
+    height:               360    
+    theme:                gray
+    volume:               100
+    autoPlay:             true
+    scaling:              fit
+  
+  
+  # Audio player
+  audio_player.class:       dmAudioPlayer
+  audio_player.options:    
+    width:                290px
+    height:               24
+    autoPlay:             false
+    loop:                 false
+    volume:               100
+    theme:                gray
+
+  flash_player.class:       dmFlashPlayer
+  flash_player.options:
+    width:                640
+    height:               360
+    allowFullScreen:      true
+    allowScriptAccess:    true
+    play:                 true
+    loop:                 true
+    menu:                 false
+    quality:              best
+    scale:                showall
+
+services:
+
+  embedded_video:
+    class:                %embedded_video.class%
+    shared:               false
+    arguments:            [ %embedded_video.options% ]
+
+  video_player:
+    class:                %video_player.class%
+    shared:               false
+    arguments:            [ %video_player.options% ]
+
+  audio_player:
+    class:                %audio_player.class%
+    shared:               false
+    arguments:            [ %audio_player.options% ]
+    
+  flash_player:
+    class:                %flash_player.class%
+    shared:               false
+    arguments:            [ %flash_player.options% ]  
+    

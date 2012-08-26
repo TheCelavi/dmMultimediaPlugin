@@ -1,0 +1,24 @@
+dmBehaviors:
+  dmEmbeddedVideoMetadataBehavior:
+    section: Metadata
+    name: Embedded Video Metadata
+    form: dmEmbeddedVideoMetadataBehaviorForm
+    view: dmEmbeddedVideoMetadataBehaviorView
+    
+  dmAudioPlayerMetadataBehavior:
+    section: Metadata
+    name: Audio Player Metadata
+    form: dmAudioPlayerMetadataBehaviorForm
+    view: dmAudioPlayerMetadataBehaviorView
+  
+  dmFlashPlayerMetadataBehavior:
+    section: Metadata
+    name: Flash Player Metadata
+    form: dmFlashPlayerMetadataBehaviorForm
+    view: dmFlashPlayerMetadataBehaviorView
+    
+  dmVideoPlayerMetadataBehavior:
+    section: Metadata
+    name: Video Player Metadata
+    form: dmVideoPlayerMetadataBehaviorForm
+    view: dmVideoPlayerMetadataBehaviorView

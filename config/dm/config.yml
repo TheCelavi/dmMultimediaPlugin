@@ -1,0 +1,63 @@
+default:
+  dmAudioPlayerPlugin:
+    flashParams:
+      allowFullScreen:      false
+      allowScriptAccess:    true
+      menu:                 false
+      quality:              best
+      scale:                showall      
+    themes:
+      gray:
+        name:               Gray
+        bgcolor:            transparent
+        animation:          yes
+        remaining:          no
+        noinfo:             no
+        buffer:             5
+        encode:             no
+        bg:                 'E5E5E5'	#Background
+        leftbg:             'CCCCCC'	#Speaker icon/Volume control background
+        lefticon:           '333333'  #Speaker icon
+        voltrack:           'F2F2F2'	#Volume track
+        volslider:          '666666'	#Volume slider
+        rightbg:            'B4B4B4'	#Play/Pause button background
+        rightbghover:       '999999'	#Play/Pause button background (hover state)
+        righticon:          '333333'	#Play/Pause icon
+        righticonhover:     'FFFFFF'	#Play/Pause icon (hover state)
+        loader:             '000000'	#Loading bar
+        track:              'FFFFFF'	#Loading/Progress bar track backgrounds
+        tracker:            'DDDDDD'	#Progress track
+        border:             'CCCCCC'	#Progress bar border
+        skip:               '666666'	#Previous/Next skip buttons
+        text:               '333333'  #Text colour
+
+  dmVideoPlayerPlugin:    
+    provider:
+      static:           'Static'
+      pseudostreaming:  'Pseudostreaming'
+      rtmp:             'RTMP'
+    scaling:
+      fit:              'Fit'
+      half:             'Half size'
+      orig:             'Original size'
+      scale:            'Scale'
+    themes:
+      #default theme
+      gray:           
+        name:         'Gray'
+        config:       '/dmMultimediaPlugin/themes/video/gray.js'
+        image:        '/dmMultimediaPlugin/themes/video/gray.png'
+  
+  dmFlashPlayerPlugin:    
+    quality:
+      best:         Best
+      high:         High
+      medium:       Medium
+      autohigh:     'Auto high'
+      autolow:      'Auto low'
+      low:          Low
+    scale:
+      showall:      'Show all'
+      noborder:     'No border'
+      exactfit:     'Exact fit'
+      noscale:      'No scale'

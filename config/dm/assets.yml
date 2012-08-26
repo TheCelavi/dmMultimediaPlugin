@@ -1,0 +1,31 @@
+js:
+  dmMultimediaPlugin:
+    # JS Renderer
+    multimediaRenderer:               dmMultimediaRenderer
+    # Behaviors
+    embeddedVideoBehaviorLaunch:      behavior/dmEmbeddedVideoMetadataBehavior
+    audioPlayerBehaviorLaunch:        behavior/dmAudioPlayerMetadataBehavior
+    flashPlayerBehaviorLaunch:        behavior/dmFlashPlayerMetadataBehavior
+    videoPlayerBehaviorLaunch:        behavior/dmVideoPlayerMetadataBehavior
+    # Widgets
+    videoPlayerScript:                widget/flowplayer-3.2.6.min
+    videoPlayerLaunch:                widget/videoPlayerLaunch       
+    
+    # Forms
+    audioPlayerForm:                  form/audioPlayerForm
+    flashPlayerForm:                  form/flashPlayerForm
+    videoPlayerForm:                  form/videoPlayerForm 
+    
+css:
+  dmMultimediaPlugin:
+    renderer:                         renderer
+    
+other:
+  dmMultimediaPlugin:
+    audioPlayer:                     'swf/audio/player.swf'
+    
+    videoPlayer:                           'swf/video/flowplayer-3.2.7.swf'
+    videoPlayerControlsPlugin:             'swf/video/flowplayer.controls-3.2.5.swf'
+    videoPlayerPseudostreamingPlugin:      'swf/video/flowplayer.pseudostreaming-3.2.7.swf'
+    videoPlayerRtmpPlugin:                 'swf/video/flowplayer.rtmp-3.2.3.swf'
+    
